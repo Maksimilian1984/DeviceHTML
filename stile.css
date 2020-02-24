@@ -1,6 +1,6 @@
 @font-face {
     font-family: "GilroyExtraBold";
-    src: url("web/gilroyextrabold.woff") format("woff"), url("web/gilroyextrxabold.woff2") format("woff2");
+    src: url("web/gilroyextrabold.woff") format("woff"), url("web/gilroyextrabold.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -1591,6 +1591,7 @@ fieldset {
     font-size: 18px;
     letter-spacing: 3.6px;
     text-transform: uppercase;
+    outline: none;
 }
 
 .communication-form .button-send::before {
@@ -1667,8 +1668,15 @@ fieldset {
     z-index: 200;
     top: 50%;
     left: 50%;
+
+    width: 960px;
+    height: 599px;
     box-shadow: 4px 0 20px 0 rgba(0, 0, 0, 0.5);
     transform: translate(-50%, -50%);
+    background-image: url("map/map-big.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .modal-map img {
@@ -1684,7 +1692,25 @@ fieldset {
     border: none;
     background-color: #91c92f;
 }
-
+/* стили для js */
 .vision {
     display: block;
+    animation: modal;
+    animation-duration: 0.5s;
+}
+
+
+
+
+
+/* анимация */
+
+@keyframes modal {
+    0% {
+        transform: translate(-50%, -2000px)
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+
 }

@@ -1,18 +1,30 @@
 const writeUs = document.querySelector('.write-us');
 const communicationForm = document.querySelector('.communication-form');
-const closemodal = document.querySelector('.close-modal');
-const closemap = document.querySelector('.close-map');
-const smollmap = document.querySelector('.contacts img');
-const modalmap = document.querySelector('.modal-map');
-writeUs.onclick = function () {
+const closeModal = document.querySelector('.close-modal');
+const closeMap = document.querySelector('.close-map');
+const smollMap = document.querySelector('.contacts img');
+const modalMap = document.querySelector('.modal-map');
+const nameClient = document.querySelector('[name = name-client]');
+const email = document.querySelector('[name=email]');
+const storage = localStorage.getItem('name');
+
+writeUs.addEventListener('click', (evt) => {
+  evt.preventDefault();
   communicationForm.classList.add('vision');
-};
-closemodal.onclick = function () {
+  if (storage) {
+    nameClient.value = storage;
+    email.focus();
+  } else {
+    nameClient.focus();
+  }
+});
+
+closeModal.onclick = function () {
   communicationForm.classList.remove('vision');
 };
-smollmap.onclick = function () {
-  modalmap.classList.add('vision');
+smollMap.onclick = function () {
+  modalMap.classList.add('vision');
 };
-closemap.onclick = function () {
-  modalmap.classList.remove('vision');
+closeMap.onclick = function () {
+  modalMap.classList.remove('vision');
 };
