@@ -1085,11 +1085,33 @@ fieldset {
     text-transform: uppercase;
 }
 
+.fieldset-cost,
+.fieldset-color,
+.fieldset-Bluetooth  {
+    margin-bottom: 30px;
+}
+.fieldset-cost {
+    margin-bottom: 50px;
+}
 .fieldset-cost legend,
 .fieldset-color legend,
 .fieldset-Bluetooth legend {
+    position: relative;
+
     font-family: "gilroyextrabold", "sans-serif", "serif";
     font-size: 18px;
+
+}
+.fieldset-cost legend::before,
+.fieldset-color legend::before,
+.fieldset-Bluetooth legend::before {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: #000000;
 }
 
 .fieldset-color label,
@@ -1101,14 +1123,12 @@ fieldset {
     font-size: 14px;
 }
 
-.fieldset-cost {
-    margin-bottom: 17px;
-}
+
 
 .fieldset-color {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 17px;
+
     padding-top: 40px;
 }
 
@@ -1452,7 +1472,13 @@ fieldset {
 
 .inner-page.user-menu-item:nth-child(2) {
     margin-left: 0px;
+    opacity: 0.6;
 }
+.inner-page.user-menu-item:nth-child(2):hover {
+    opacity: 1;
+
+}
+
 
 .inner-page.user-menu-item:nth-child(3) {
     margin-left: 0px;
@@ -1686,12 +1712,54 @@ fieldset {
 
 /* слили для ползунка*/
 
-.fieldset-cost input::-webkit-slider-runnable-track {
-    width: 300px;
+.fieldset-cost label {
+    position: relative;
+    display: block;
+
+    margin-bottom: 10px;
+
+    width: 200px;
     height: 2px;
-    border: none;
-    background-color: #91c92f;
+
+    background-image:
+            linear-gradient(to right, #91c92f , #91c92f 70%, #dbdbdb 70%, #dbdbdb);
 }
+
+.fieldset-cost label::after,
+.fieldset-cost label::before {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    content: "";
+    width: 4px;
+    height: 4px;
+
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 0 0 #dadada;
+
+    background-color: #ababab;
+
+}
+.fieldset-cost label::after {
+    left: -10px;
+}
+.fieldset-cost label::before {
+    right: 55px;
+}
+.fieldset-cost output {
+    margin-right: 70px;
+    font-family: "gilroylight", "sans-serif", "serif";
+    font-size: 14px;
+    color: #bfbfbf;
+}
+.fieldset-cost legend {
+    margin-bottom: 40px;
+}
+
+
+
+
 /* стили для js */
 .vision {
     display: block;
