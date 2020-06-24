@@ -2,3 +2,7 @@
 .DS_Store
 /.idea
 /markup
+package-lock.json
+package.json
+.gitattributes
+.eslintrc.js
