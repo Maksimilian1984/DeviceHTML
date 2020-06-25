@@ -803,6 +803,7 @@ form[name="search"]::before {
 /*   поменять */
 
 footer {
+    min-width: 1160px;
     background-color: #464646;
 }
 
@@ -1087,21 +1088,22 @@ fieldset {
 
 .fieldset-cost,
 .fieldset-color,
-.fieldset-Bluetooth  {
+.fieldset-Bluetooth {
     margin-bottom: 30px;
 }
+
 .fieldset-cost {
     margin-bottom: 50px;
 }
+
 .fieldset-cost legend,
 .fieldset-color legend,
 .fieldset-Bluetooth legend {
     position: relative;
-
     font-family: "gilroyextrabold", "sans-serif", "serif";
     font-size: 18px;
-
 }
+
 .fieldset-cost legend::before,
 .fieldset-color legend::before,
 .fieldset-Bluetooth legend::before {
@@ -1123,12 +1125,9 @@ fieldset {
     font-size: 14px;
 }
 
-
-
 .fieldset-color {
     display: flex;
     flex-wrap: wrap;
-
     padding-top: 40px;
 }
 
@@ -1474,11 +1473,10 @@ fieldset {
     margin-left: 0px;
     opacity: 0.6;
 }
+
 .inner-page.user-menu-item:nth-child(2):hover {
     opacity: 1;
-
 }
-
 
 .inner-page.user-menu-item:nth-child(3) {
     margin-left: 0px;
@@ -1694,7 +1692,6 @@ fieldset {
     z-index: 200;
     top: 50%;
     left: 50%;
-
     width: 960px;
     height: 599px;
     box-shadow: 4px 0 20px 0 rgba(0, 0, 0, 0.5);
@@ -1715,60 +1712,53 @@ fieldset {
 .fieldset-cost label {
     position: relative;
     display: block;
-
     margin-bottom: 10px;
-
     width: 200px;
     height: 2px;
-
-    background-image:
-            linear-gradient(to right, #91c92f , #91c92f 70%, #dbdbdb 70%, #dbdbdb);
+    background-image: linear-gradient(to right, #91c92f, #91c92f 100%, #dbdbdb 100%, #dbdbdb);
 }
 
-.fieldset-cost label::after,
-.fieldset-cost label::before {
+.pin-1,
+.pin-2 {
     position: absolute;
     top: 50%;
     margin-top: -10px;
     content: "";
     width: 4px;
     height: 4px;
-
     border: 8px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 0 0 #dadada;
-
     background-color: #ababab;
+}
 
+.pin-1 {
+    left: 0px;
 }
-.fieldset-cost label::after {
-    left: -10px;
+
+.pin-2 {
+    left: 180px;
 }
-.fieldset-cost label::before {
-    right: 55px;
-}
+
 .fieldset-cost output {
     margin-right: 70px;
     font-family: "gilroylight", "sans-serif", "serif";
     font-size: 14px;
     color: #bfbfbf;
 }
+
 .fieldset-cost legend {
     margin-bottom: 40px;
 }
 
 
-
-
 /* стили для js */
+
 .vision {
     display: block;
     animation: modal;
     animation-duration: 0.5s;
 }
-
-
-
 
 
 /* анимация */
@@ -1780,5 +1770,4 @@ fieldset {
     100% {
         transform: translate(-50%, -50%);
     }
-
 }

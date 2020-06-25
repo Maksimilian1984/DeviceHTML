@@ -2,212 +2,183 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>DEVICE</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="stile.css">
+    <meta charset="utf-8">
+    <title>DEVICE</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="stile.css">
 </head>
 
 <body class="inner-page">
-  <header class="container inner-page">
-    <div class="menu">
-      <h1 class="logo"><a href="index.html">DEVICE</a></h1>
-      <section class="user-menu">
-        <form method="get" name="search" action="#">
-          <input type="search" name="search"  id="search" placeholder="Поиск по сайту">
-          <label for="search" class="visible">Поиск по сайту</label>
-          <button type="submit" name="button">Найти</button>
-        </form>
-        <ul>
-          <li class="inner-page user-menu-item"><a href="#">Валентин Петухов</a></li>
-          <li class="inner-page user-menu-item"><a href="#">Выйти</a></li>
-          <li class="inner-page user-menu-item"><a href="#">Сравнить</a></li>
-          <li class="inner-page user-menu-item"><a href="#">Корзина</a></li>
-        </ul>
-      </section>
-      <section class="main-menu inner-page">
-        <ul class="list-main-menu">
-          <li class="main-menu-item"><a href="#">Каталог товаров</a>
-            <div class="submenu">
-              <ul class="colum-1">
-                <li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
-                <li class="submenu-item"><a href="catalog.html">Моноподы для селфи</a></li>
-                <li class="submenu-item"><a href="#">Экшн-камеры</a></li>
-              </ul>
-              <ul class="colum-2">
-                <li class="submenu-item"><a href="#">Фитнес-браслеты</a></li>
-                <li class="submenu-item"><a href="#">Умные часы</a></li>
-              </ul>
-              <ul class="colum-3">
-                <li class="submenu-item"><a href="#">Квадрокоптеры</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-menu-item"><a href="#">Доставка</a></li>
-          <li class="main-menu-item"><a href="#">Гарантия</a></li>
-          <li class="main-menu-item"><a href="#">Контакты</a></li>
-        </ul>
-      </section>
-    </div>
-  </header>
-  <main class="inner-page">
-    <div class="container">
-      <h2>Моноподы для селфи</h2>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item"><a href="#">Главная</a></li>
-        <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
-        <li class="breadcrumbs-item">Моноподы для селфи</li>
-      </ul>
-    </div>
-    <div class="background">
-
-
-    <div class="container filter-catalog">
-      <section class="filter">
-        <form action="index.html" method="get">
-          <fieldset class="main-fieldset">
-            <legend>Фильтр:</legend>
-            <fieldset class="fieldset-cost">
-              <legend>Стоимость</legend>
-              <label for="cost"></label>
-              <input class="visible" type="range" name="cost" value="500" min="0" max="10000" id="cost">
-              <output name="cost-filter" id="cost-filter-min" for="cost">от 0</output>
-              <output name="cost-filter" id="cost-filter-max" for="cost">до 5000</output>
-            </fieldset>
-            <fieldset class="fieldset-color">
-              <legend>Цвет</legend>
-              <input  class="visible" type="checkbox" name="color" value="black" id="black">
-              <label for="black">Черный</label>
-              <input  class="visible" type="checkbox" name="color" value="white" id="white">
-              <label for="white">Белый</label>
-              <input class="visible" type="checkbox" name="color" value="blue" id="blue">
-              <label  for="blue">Синий</label>
-              <input class="visible" type="checkbox" name="color" value="red" id="red">
-              <label for="red">Красный</label>
-              <input class="visible" type="checkbox" name="color" value="pink" id="pink">
-              <label for="pink">Розовый</label>
-            </fieldset>
-            <fieldset class="fieldset-Bluetooth">
-              <legend>Bluetooth</legend>
-              <input class="visible" type="radio" name="Bluetooth" value="Bluetoot-yes" id="Bluetoot-yes">
-              <label for="Bluetoot-yes">Есть</label>
-              <input class="visible" type="radio" name="Bluetooth" value="Bluetoot-no" id="Bluetoot-no">
-              <label for="Bluetoot-no">Нет</label>
-            </fieldset>
-            <button type="submit" name="button">Показать</button>
-          </fieldset>
-        </form>
-      </section>
-      <section class="catalog">
-        <div class="sorting">
-          <span>Сортировка:</span>
-          <a class="active" href="#">По цене</a>
-          <a href="#">По типу</a>
-          <a href="#">По популярности</a>
-          <a href="#"></a>
-          <a  class="active" href="#"></a>
+    <header class="container inner-page">
+        <div class="menu">
+            <h1 class="logo"><a href="index.html">DEVICE</a></h1>
+            <section class="user-menu">
+                <form method="get" name="search" action="#">
+                    <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+                    <label for="search" class="visible">Поиск по сайту</label>
+                    <button type="submit" name="button">Найти</button>
+                </form>
+                <ul>
+                    <li class="inner-page user-menu-item"><a href="#">Валентин Петухов</a></li>
+                    <li class="inner-page user-menu-item"><a href="#">Выйти</a></li>
+                    <li class="inner-page user-menu-item"><a href="#">Сравнить</a></li>
+                    <li class="inner-page user-menu-item"><a href="#">Корзина</a></li>
+                </ul>
+            </section>
+            <section class="main-menu inner-page">
+                <ul class="list-main-menu">
+                    <li class="main-menu-item"><a href="#">Каталог товаров</a>
+                        <div class="submenu">
+                            <ul class="colum-1">
+                                <li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
+                                <li class="submenu-item"><a href="catalog.html">Моноподы для селфи</a></li>
+                                <li class="submenu-item"><a href="#">Экшн-камеры</a></li>
+                            </ul>
+                            <ul class="colum-2">
+                                <li class="submenu-item"><a href="#">Фитнес-браслеты</a></li>
+                                <li class="submenu-item"><a href="#">Умные часы</a></li>
+                            </ul>
+                            <ul class="colum-3">
+                                <li class="submenu-item"><a href="#">Квадрокоптеры</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="main-menu-item"><a href="#">Доставка</a></li>
+                    <li class="main-menu-item"><a href="#">Гарантия</a></li>
+                    <li class="main-menu-item"><a href="#">Контакты</a></li>
+                </ul>
+            </section>
         </div>
-        <ul class="catalog-list">
-          <li class="catalog-list-item">
-            <div>
-            <img src="catalog%20img/item-1.jpg" alt="Любительская селфи-палка">
-            <button type="button" name="button">в корзину</button>
-            <button type="button" name="button">Добавить к сравнению</button>
-              </div>
-            <span>Любительская селфи-палка</span>
-            <b>500 руб</b>
-          </li>
-          <li class="catalog-list-item">
-              <div>
-            <img src="catalog%20img/item-2.jpg" alt="Профессиональная селфи-палка">
-            <button type="button" name="button">в корзину</button>
-            <button type="button" name="button">Добавить к сравнению</button>
-            </div>
-            <span>Профессиональная <br> селфи-палка</span>
-            <b>1500 руб</b>
-        </li>
-          <li class="catalog-list-item">
-            <div>
-              <img src="catalog%20img/item-3.jpg" alt="Непотопляемая селфи-палка">
-              <button type="button" name="button">в корзину</button>
-              <button type="button" name="button">Добавить к сравнению</button>
-            </div>
-            <span>Непотопляемая селфи-палка</span>
-            <b>2500</b>
-          </li>
-          <li class="catalog-list-item">
-            <div>
-            <img src="catalog%20img/item-4.jpg" alt="Селфи-палка Следуй за мной">
-            <button type="button" name="button">в корзину</button>
-            <button type="button" name="button">Добавить к сравнению</button>
-              </div>
-            <span>Селфи-палка <br> «Следуй за мной»</span>
-            <b>4900 руб</b>
-          </li>
-        </ul>
-        <ul class="pagination">
-          <li class="pagination-item"><a href="#">Назад</a></li>
-          <li class="pagination-item active"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Вперед</a></li>
-        </ul>
-      </section>
-    </div>
-      </div>
-      <footer class="inner-page">
+    </header>
+    <main class="inner-page">
         <div class="container">
-        <div class="contacts-footer">
-          <a href="#">DEVICE</a>
-          <ul>
-            <li class="user-mf-item"><a href="#">Валентин Петухов</a></li>
-            <li class="user-mf-item"><a href="#">Выйти</a></li>
-            <li class="user-mf-item"><a href="#">Сравнить</a></li>
-            <li class="user-mf-item"><a href="#">Корзина</a></li>
-          </ul>
-        </div>
-        <div class="cosial-footer">
-          <p>г. Москва, ул. Строителей, 15</p>
-          <ul>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          <span>Тел.: +7 (495) 495-95-95</span>
-            </div>
-          <div class="menu-footer">
-            <span></span>
-            <ul class="cocial-icons">
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+            <h2>Моноподы для селфи</h2>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
+                <li class="breadcrumbs-item">Моноподы для селфи</li>
             </ul>
-            <a><img src="icon user menu/logo-html-1.svg" alt="HTMLAcademy"></a>
-          </div>
         </div>
-      </footer>
-      <section class="communication-form">
-        <button class="close-modal" type="button" name="close-communication-form"></button>
-        <form  action="index.html" method="post">
-           <div class="communication">
-          <label>Ваше имя</label>
-            <input type="text" name="name-client" value="" placeholder="Имя Фамилия">
-          </div>
-          <div class="communication">
-          <label>Ваш e-mail</label>
-            <input type="email" name="email" value="" placeholder="email@example.com">
-            </div>
-          <label>Текс письма</label>
-            <textarea name="name" rows="8" cols="80" placeholder="В свободной форме"></textarea>
-          <button  class="button-send" type="button" name="button-send-communication-form">Отправить</button>
-        </form>
-      </section>
-      <section class="modal-map">
-        <button class="close-modal" type="button" name="close-communication-form"></button>
-        <img src="map/map-big.png" alt="Как нас найти">
-      </section>
-  </main>
+        <div class="background">
 
+
+            <div class="container filter-catalog">
+                <section class="filter">
+                    <form action="index.html" method="get">
+                        <fieldset class="main-fieldset">
+                            <legend>Фильтр:</legend>
+                            <fieldset class="fieldset-cost">
+                                <legend>Стоимость</legend>
+                                <label for="cost" class="pin"><span class="pin-1"></span><span class="pin-2"></span></label>
+                                <input class="visible" type="range" name="cost" value="500" min="0" max="10000" id="cost">
+                                <output name="cost-filter" id="cost-filter-min" for="cost">от 0</output>
+                                <output name="cost-filter" id="cost-filter-max" for="cost">до 5000</output>
+                            </fieldset>
+                            <fieldset class="fieldset-color">
+                                <legend>Цвет</legend>
+                                <input class="visible" type="checkbox" name="color" value="black" id="black">
+                                <label for="black">Черный</label>
+                                <input class="visible" type="checkbox" name="color" value="white" id="white">
+                                <label for="white">Белый</label>
+                                <input class="visible" type="checkbox" name="color" value="blue" id="blue">
+                                <label for="blue">Синий</label>
+                                <input class="visible" type="checkbox" name="color" value="red" id="red">
+                                <label for="red">Красный</label>
+                                <input class="visible" type="checkbox" name="color" value="pink" id="pink">
+                                <label for="pink">Розовый</label>
+                            </fieldset>
+                            <fieldset class="fieldset-Bluetooth">
+                                <legend>Bluetooth</legend>
+                                <input class="visible" type="radio" name="Bluetooth" value="Bluetoot-yes" id="Bluetoot-yes">
+                                <label for="Bluetoot-yes">Есть</label>
+                                <input class="visible" type="radio" name="Bluetooth" value="Bluetoot-no" id="Bluetoot-no">
+                                <label for="Bluetoot-no">Нет</label>
+                            </fieldset>
+                            <button type="submit" name="button">Показать</button>
+                        </fieldset>
+                    </form>
+                </section>
+                <section class="catalog">
+                    <div class="sorting">
+                        <span>Сортировка:</span>
+                        <a class="active" href="#">По цене</a>
+                        <a href="#">По типу</a>
+                        <a href="#">По популярности</a>
+                        <a href="#"></a>
+                        <a class="active" href="#"></a>
+                    </div>
+                    <ul class="catalog-list">
+                    </ul>
+                    <ul class="pagination">
+                        <li class="pagination-item"><a href="#">Назад</a></li>
+                        <li class="pagination-item active"><a href="#">1</a></li>
+                        <li class="pagination-item"><a href="#">2</a></li>
+                        <li class="pagination-item"><a href="#">3</a></li>
+                        <li class="pagination-item"><a href="#">Вперед</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <footer class="inner-page">
+            <div class="container">
+                <div class="contacts-footer">
+                    <a href="#">DEVICE</a>
+                    <ul>
+                        <li class="user-mf-item"><a href="#">Валентин Петухов</a></li>
+                        <li class="user-mf-item"><a href="#">Выйти</a></li>
+                        <li class="user-mf-item"><a href="#">Сравнить</a></li>
+                        <li class="user-mf-item"><a href="#">Корзина</a></li>
+                    </ul>
+                </div>
+                <div class="cosial-footer">
+                    <p>г. Москва, ул. Строителей, 15</p>
+                    <ul>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <span>Тел.: +7 (495) 495-95-95</span>
+                </div>
+                <div class="menu-footer">
+                    <span></span>
+                    <ul class="cocial-icons">
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                    <a><img src="icon user menu/logo-html-1.svg" alt="HTMLAcademy"></a>
+                </div>
+            </div>
+        </footer>
+        <section class="communication-form">
+            <button class="close-modal" type="button" name="close-communication-form"></button>
+            <form action="index.html" method="post">
+                <div class="communication">
+                    <label>Ваше имя</label>
+                    <input type="text" name="name-client" value="" placeholder="Имя Фамилия">
+                </div>
+                <div class="communication">
+                    <label>Ваш e-mail</label>
+                    <input type="email" name="email" value="" placeholder="email@example.com">
+                </div>
+                <label>Текс письма</label>
+                <textarea name="name" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+                <button class="button-send" type="button" name="button-send-communication-form">Отправить</button>
+            </form>
+        </section>
+        <section class="modal-map">
+            <button class="close-modal" type="button" name="close-communication-form"></button>
+            <img src="map/map-big.png" alt="Как нас найти">
+        </section>
+    </main>
+    <script src="cardproducts.js"></script>
+    <script src="pingo.js"></script>
 </body>
 
 </html>

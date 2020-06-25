@@ -6,3 +6,4 @@ package-lock.json
 package.json
 .gitattributes
 .eslintrc.js
+.gitignore

@@ -1,7 +1,3 @@
-
-
-
-
 const writeUs = document.querySelector('.write-us');
 const communicationForm = document.querySelector('.communication-form');
 const closeModal = document.querySelector('.close-modal');
@@ -11,19 +7,19 @@ const modalMap = document.querySelector('.modal-map');
 
 
 writeUs.addEventListener('click', (evt) => {
-  evt.preventDefault();
-  communicationForm.classList.add('vision');
+    evt.preventDefault();
+    communicationForm.classList.add('vision');
 
 });
 
 closeModal.onclick = () => {
-  communicationForm.classList.remove('vision');
+    communicationForm.classList.remove('vision');
 };
-smollMap.onclick =  () => {
-  modalMap.classList.add('vision');
+smollMap.onclick = () => {
+    modalMap.classList.add('vision');
 };
 closeMap.onclick = () => {
-  modalMap.classList.remove('vision');
+    modalMap.classList.remove('vision');
 };
 
 
@@ -31,20 +27,20 @@ const radio1 = document.querySelector('#selfi');
 const radio2 = document.querySelector('#fitnes');
 const radio3 = document.querySelector('#cuadrocopter');
 
-var radioChecked = (button) => {
-  button.checked = true;
-  console.log(button)
+const radioChecked = (button) => {
+    button.checked = true;
+    console.log(button)
 };
 
 
-var handlerSlider = () => {
-  if(radio1.checked) {
-    radioChecked(radio2)
-  } else if(radio2.checked) {
-    radioChecked(radio3)
-  } else if(radio3.checked) {
-    radioChecked(radio1)
-  }
+const handlerSlider = () => {
+    if (radio1.checked) {
+        radioChecked(radio2)
+    } else if (radio2.checked) {
+        radioChecked(radio3)
+    } else if (radio3.checked) {
+        radioChecked(radio1)
+    }
 };
 
 
