@@ -64,16 +64,17 @@ class ProductCard {
     }
 };
 
+const board = document.querySelector(`.catalog-list`);
+
+const render = (element, container, newClass1) => {
+
+    const newElement1 = newClass1;
 
 
-const render = (element) => {
+    container.append(newElement1.getElement(element));
 
-    const newProductCard = new ProductCard();
 
-    const board = document.querySelector(`.catalog-list`);
-
-    board.append(newProductCard.getElement(element));
 };
 
 
-productList.map((it) => render(it))
+productList.map((it) => render(it, board, new ProductCard()))
